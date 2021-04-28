@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <ul>
+      <li><a href="book">Book</a></li>
+      <li><a href="author">Author</a></li>
+      <li><a href="publisher">Publisher</a></li>
+      <li style="float:right"><a class="active" href="/">Home</a></li>
+     </ul>
+    </div>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    <form>
+     {{#book}}
+     <div class="row">
+      <div class="three  columns">
+       <label for="nameInput">Title</label></td>
+       <input class="u-full-width" type="text" readonly
+          id="name" value="{{title}}">
+      </div>
+      <div class="three  columns">
+       <label for="degreeInput">Edition</label>
+       <input class="u-full-width" type="text" readonly
+          id="degree" value="{{edition}}">
+      </div>
+      <div class="three columns">
+        <label for="degreeInput">Pages</label>
+        <input class="u-full-width" type="text" readonly
+           id="degree" value="{{pages}}">
+       </div>
+       <div class="three  columns">
+        <label for="degreeInput">Author</label>
+        <a href="/author/{{author_id}}">{{author}}</a>
+       </div>
+     </div>
+     <div class="row">
+      <div class="three  columns">
+       <label for="nameInput">Copyright</label>
+       <input class="u-full-width" type="email" readonly
+          id="email" value="{{copyright}}">
+      </div>
+      <div class="three columns">
+       <label for="phoneInput">Language</label>
+       <input class="u-full-width" type="tel" readonly
+         id="phone" value="{{language}}">
+      </div>
+      <div class="three columns">
+        <label for="phoneInput">Publisher</label>
+        <a href="/publisher/{{publisher_id}}">{{publisher}}</a>
+       </div>
+       <div class="three columns">
+     <a class="button button-primary" href="/book">Back</a>
+    </div>
+     </div>
+     {{/book}}
+    </form>
+   </div>
+  </div>
+ </div>
+</body>
