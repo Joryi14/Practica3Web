@@ -20,9 +20,13 @@
     </div>
 
  <div class="container">
+
+
   <div class="row">
    <div class="eleven column" style="margin-top: 10%">
      <h2>{{title}}</h2>
+     <a class="button button-primary" href="/book/create">New</a>
+
   <table>
   <thead>
     <tr>
@@ -33,6 +37,7 @@
       <th>Pages</th>
       <th>Author</th>
       <th>Publisher</th>
+      <th>Action</th>
     </tr>
   </thead>
       <tbody>
@@ -46,7 +51,8 @@
       <td>{{pages}}</td>
       <td><a href="author/{{author_id}}">{{author}}</a></td>
       <td><a href="publisher/{{publisher_id}}">{{publisher}}</a></td>
-      </tr>
+      <td><a href="/book/{{id}}/edit">Edit</a> <br> <a href="/book/{{id}}/delete">Delete</a></td>   
+    </tr>
       {{/books}}
       </tbody>
      </table>

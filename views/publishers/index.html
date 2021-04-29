@@ -21,13 +21,15 @@
   <div class="row">
    <div class="eleven column" style="margin-top: 10%">
      <h2>{{title}}</h2>
+
+     <a class="button button-primary" href="/publisher/create">New</a>
   <table>
   <thead>
     <tr>
-      <th>Author</th>
-      <th>Nationality</th>
-      <th>Birth Year</th>
-      <th>Fields</th>
+      <th>Publisher</th>
+      <th>Country</th>
+      <th>Founded</th>
+      <th>Genere</th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -39,7 +41,7 @@
       <td>{{country}}</td>
       <td>{{founded}}</td>
       <td>{{genere}}</td>
-      <td><a href="">Edit</a> <br><a href="">Delete</a></td> 
+      <td><a href="publisher/{{id}}/edit">Edit</a> <br><a href="publisher/{{id}}/delete">Delete</a></td> 
     </tr>
       {{/publisher}}
       </tbody>

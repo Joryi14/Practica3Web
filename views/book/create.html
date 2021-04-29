@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+   <div class="eleven column" style="margin-top: 10%">
+    <h2>{{title}}</h2>
+    <form action="/book" method="post">
+     <div class="row">
+      <div class="six columns">
+       <label for="nameInput">Title</label>
+       <input class="u-full-width" type="text" 
+          name="title">
+      </div>
+      <div class="six columns">
+       <label for="nationalityInput">Edition</label>
+       <input class="u-full-width" type="text" 
+          name="edition">
+      </div>
+     </div>
+     <div class="row">
+      <div class="six columns">
+       <label for="BirthInput">Copyright</label>
+       <input class="u-full-width" type="number" 
+          name="copyright">
+      </div>
+      <div class="six columns">
+       <label for="fieldsInput">Language</label>
+       <input class="u-full-width" type="text"
+         name="language">
+      </div>
+      <div class="six columns">
+        <label for="fieldsInput">Pages</label>
+        <input class="u-full-width" type="number"
+          name="pages">
+       </div>
+       <div class="six columns">
+        <label for="fieldsInput">Author</label>
+        <input class="u-full-width" type="text"
+          name="author">
+       </div>
+       <div class="six columns">
+        <label for="fieldsInput">Author ID</label>
+        <input class="u-full-width" type="number"
+          name="author_id">
+       </div>
+       <div class="six columns">
+        <label for="fieldsInput">Publisher</label>
+        <input class="u-full-width" type="text"
+          name="publisher">
+       </div>
+       <div class="six columns">
+        <label for="fieldsInput">Publisher ID</label>
+        <input class="u-full-width" type="number"
+          name="publisher_id">
+       </div>
+     </div>
+     <input class="button-primary" type="submit" value="Create">
+    </form>
+   </div>
+  </div>
+ </div>
+</body>
